@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "backend"
+version = "0.1.0"
+description = ""
+authors = ["yifei-yao <yaoyifei0@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+fastapi = "^0.115.6"
+uvicorn = "^0.32.1"
+psycopg = { extras = ["binary"], version = "^3.2.3" }
+starlette = "^0.41.3"
+psycopg-pool = "^3.2.4"
+passlib = "^1.7.4"
+python-jose = "^3.3.0"
+python-multipart = "^0.0.19"
+bcrypt = "^4.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
