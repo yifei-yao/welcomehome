@@ -225,7 +225,7 @@ function Donate() {
 
   return (
     <div>
-      <HomeIcon /> {}
+      <HomeIcon />
       <h1>Accept Donation</h1>
       <form onSubmit={handleSubmit}>
         <label>
@@ -246,6 +246,47 @@ function Donate() {
             value={formData.item_description}
             onChange={handleChange}
             required
+          />
+        </label>
+        <br />
+        <label>
+          Photo:
+          <input
+            type="text"
+            name="photo"
+            value={formData.photo}
+            onChange={handleChange}
+            placeholder="Enter photo URL or filename"
+          />
+        </label>
+        <br />
+        <label>
+          Color:
+          <input
+            type="text"
+            name="color"
+            value={formData.color}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Is New:
+          <input
+            type="checkbox"
+            name="is_new"
+            checked={formData.is_new}
+            onChange={handleChange}
+          />
+        </label>
+        <br />
+        <label>
+          Material:
+          <input
+            type="text"
+            name="material"
+            value={formData.material}
+            onChange={handleChange}
           />
         </label>
         <br />
